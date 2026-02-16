@@ -82,7 +82,7 @@ exports.onCreateNode = async (...args) => {
 
     const specificChild = {
       ...content,
-      id: createNodeId(`${node.id}:${index} >>> ${specificType}`),
+      id: createNodeId(`${node.id}:${index}:${node.internal.contentDigest} >>> ${specificType}`),
       internal: {
         contentDigest: createContentDigest(content),
         type: camelCase(`${specificType} Yaml`)
