@@ -140,8 +140,10 @@ exports.onCreateNode = async (...args) => {
     }
 
     const specificType = `${instanceName || directory || ''} ${fileName}`
-    const generalType = `${instanceName || directory || null}`
-    return { specificType, generalType }
+    // generalType disabled: multiple YAML files sharing the same sourceInstanceName
+    // (e.g. yamlData) cause conflicting field types in GraphQL schema.
+    // specificType provides unique, file-level types which is all that's needed.
+    return { specificType, generalType: null }
   }
 
   const nodeContent = await loadNodeContent(node)
