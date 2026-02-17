@@ -1,9 +1,9 @@
 {
   "name": "gatsby-yaml-full-markdown",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Markdown to HTML conversion using !markdown tag",
-  "homepage": "https://github.com/stldo/gatsby-transformer-yaml-full/tree/master/packages/gatsby-yaml-full-markdown#readme",
-  "repository": "https://github.com/stldo/gatsby-transformer-yaml-full/tree/master/packages/gatsby-yaml-full-markdown",
+  "homepage": "https://github.com/snics/gatsby-transformer-yaml-full/tree/master/packages/gatsby-yaml-full-markdown#readme",
+  "repository": "https://github.com/snics/gatsby-transformer-yaml-full/tree/master/packages/gatsby-yaml-full-markdown",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -19,8 +19,8 @@
   },
   "peerDependencies": {
     "gatsby": "^5.0.0",
-    "gatsby-transformer-yaml-full": "^5.0.0"
+    "gatsby-transformer-yaml-fulls": "^1.0.0"
   },
-  "author": "stldo (https://github.com/stldo)",
+  "author": "snics (https://github.com/snics)",
   "license": "MIT"
 }
