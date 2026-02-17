@@ -1,21 +1,23 @@
 {
-  "private": true,
-  "name": "gatsby-transformer-yaml-full",
-  "workspaces": ["packages/*"],
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "outdated": "npm outdated && lerna exec --no-bail -- npm outdated",
-    "lint": "eslint --cache --ext js ./packages",
-    "lint:fix": "eslint --fix --cache --ext js ./packages",
-    "publish": "lerna publish --no-private",
-    "version": "lerna version --no-private"
+  "name": "gatsby-transformer-yaml-fulls",
+  "version": "1.1.0",
+  "description": "YAML parser with support for custom tags and multiple document sources",
+  "homepage": "https://github.com/snics/gatsby-transformer-yaml-full#readme",
+  "repository": "https://github.com/snics/gatsby-transformer-yaml-full",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer-plugin",
+    "yaml"
+  ],
+  "dependencies": {
+    "is-plain-object": "^5.0.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
   },
-  "devDependencies": {
-    "eslint": "^8.35.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "lerna": "^6.5.1"
-  }
+  "peerDependencies": {
+    "gatsby": "^5.0.0"
+  },
+  "author": "snics (https://github.com/snics)",
+  "license": "MIT"
 }
